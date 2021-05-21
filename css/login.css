@@ -49,7 +49,7 @@ body{
     cursor: pointer;
 }
 .navigation a:last-child{
-    padding-left: 0;
+    padding-right: 0;
 }
 .navigation a li{
     display: table-cell;
