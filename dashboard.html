@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>SPEXT</title>
     <link rel="stylesheet" href="css/dashboard.css">
+    <script src="JS/dashboard.js"></script>
 </head>
 <body>
 <nav>
@@ -21,47 +22,25 @@
     </div>
 </nav>
     <div class="center">
-        <h1>Welcome to Dashboard</h1>
-        <input class="button"
-               type="button" id="firstbutton"
-               name="testbutton" value="firstbutton"
-               onclick="alert('The Button has no function')">
-
-        <input class="button"
-               type="button"
-               id="secondbutton"
-               name="testbutton"
-               value="secondbutton"
-               onclick="alert('The Button has no function')">
-
-
+        <h1>Audio Transcription</h1>
         <div class="spoken_text">
-            <input type="file" accept="audio/*" id="upload">
-            <audio id="player" controls></audio>
-            <script>
-                const player = document.getElementById('player');
-
-                const handleSuccess = function(stream) {
-                    if (window.URL) {
-                        player.srcObject = stream;
-                    } else {
-                        player.src = stream;
-                    }
-                };
-
-                navigator.mediaDevices.getUserMedia({ audio: true, video: false })
-                    .then(handleSuccess);
-                navigator.mediaDevices.enumerateDevices().then((devices) => {
-                    devices = devices.filter((d) => d.kind === 'audioinput');
-                });
-                navigator.mediaDevices.getUserMedia({
-                    audio: {
-                        deviceId: devices[0].deviceId
-                    }
-                });
-            </script>
+            <div id="inner_spoken_text_up">
+                <input type="file" accept="audio/*" id="realFile" hidden="hidden"/>
+                <button type="button" id="uploadFileBtn" class="button">
+                    <img src="upload.png" height="64px" width="64px">
+                </button>
+                <span id="uploadFileSpan">No file chosen!</span>
+            </div>
+            <div id="inner_spoken_text_down">
+                <button id="record" class="button">
+                    <img src="mic.png" height="64px" width="64px">
+                </button>
+            </div>
         </div>
-        <div class="translated_text">Hey</div>
+
+        <div class="translated_text">
+            <input type="text" value="Your transcripted text will be displayed here!" id="transcript_output"/>
+        </div>
     </div>
 </body>
 </html>
