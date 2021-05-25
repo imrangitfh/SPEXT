@@ -37,6 +37,9 @@ body{
     font-weight: 800;
     color: #54B5AA;
 }
+.spext_header a{
+    text-decoration: none;
+}
 .navigation{
     float: right;
     height: 100%;
@@ -47,6 +50,7 @@ body{
     float: left;
     padding: 0 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 .navigation a:last-child{
     padding-right: 0;
@@ -74,6 +78,8 @@ body{
     background: whitesmoke;
     border-radius: 10px;
     text-align: center;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
 }
 .logo_container{
     position: absolute;
