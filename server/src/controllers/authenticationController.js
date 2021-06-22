@@ -19,14 +19,15 @@ connection.connect( (error) => {
 module.exports = {
     async register (req, res) {
         try{
-            //var spext_user = {
-                var user_email = await req.body.email;
-                var user_username = await req.body.username;
-                var user_password =  await req.body.password;
-            //};
-            var sql ="INSERT INTO users (username, email, password) VALUES ('" + req.body.username + "', '" + req.body.email + "', '" + req.body.password +"')";
+            var spext_user = {
+                'user_email' : await "'"+req.body.email+"'",
+                'user_username' : await "'"+req.body.username+"'",
+                'user_password' :  await "'"+req.body.password+"'",
+            };
+            var sql ="INSERT INTO users (username, email, password) VALUES (" + spext_user.user_username + ", " + spext_user.user_email + ", " + spext_user.user_password +")";
                 connection.query(sql, function (err, result) {
                 if (err) throw err
+                    else res.send({statusCode:200, msg:'login successful', spext_user})
             });
         } catch (err) {
             res.status(400).send({

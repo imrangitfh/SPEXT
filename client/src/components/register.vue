@@ -40,8 +40,9 @@ export default {
         email: this.email,
         password: this.password
       })
-      await this.$router.push('/');
-    },
+      console.log(response)
+      await this.$router.push({ path: '/' })
+    }
   }
 }
 </script>

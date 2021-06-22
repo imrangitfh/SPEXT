@@ -19,7 +19,7 @@
       </div>
       <input type="submit" value="Login"/>
       <div class="signup_link">
-        Not a member? <a href="signup.html">Signup</a>
+        Not a member? <a @click="$router.push('/register')">Signup</a>
       </div>
     </form>
   </div>
@@ -41,7 +41,7 @@ export default {
         username: this.username,
         password: this.password
       })
-      await this.$router.push('/dashboard');
+      await this.$router.push('/dashboard')
     }
   }
 }
