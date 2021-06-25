@@ -1,15 +1,16 @@
 const express = require('express');
-
+const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const morgan = require('morgan');
 
-const db = require('./database');
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(fileUpload({
+    createParentPath: true
+}));
 
 require('./routes')(app);
 

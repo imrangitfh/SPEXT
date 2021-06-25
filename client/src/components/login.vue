@@ -37,11 +37,6 @@ export default {
   },
   methods: {
     async click () {
-      const response = await authentication.signin({
-        username: this.username,
-        password: this.password
-      })
-      await this.$router.push('/dashboard')
     }
   }
 }

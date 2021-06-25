@@ -3,8 +3,8 @@
     <h1>Audio Transcription</h1>
     <div class="spoken_text">
       <div id="inner_spoken_text_up">
-        <input type="file" accept="audio/*" id="realFile" hidden="hidden"/>
-        <button type="button" id="uploadFileBtn" class="button">
+        <input type="file" @change="onFileChange" id="realFile" ref="file"/>
+        <button @click.prevent="onUploadFile" enctype="multipart/form-data" id="uploadFileBtn" class="button">
           <img src="upload.png" height="64px" width="64px">
         </button>
         <span id="uploadFileSpan">No file chosen!</span>
@@ -23,8 +23,32 @@
 </template>
 
 <script>
+import dashboardUpload from '../services/dashboardUpload'
+
 export default {
+  name: 'dashboard',
   data () {
+    return {
+      file: ''
+    }
+  },
+  methods: {
+    onFileChange () {
+      const file = this.$refs.file.files[0]
+      this.file = file
+    },
+    async onUploadFile () {
+      const formData = new FormData()
+      formData.append('file', this.file)
+      console.log(formData)
+      try {
+        const response = await dashboardUpload.fileUpload(formData)
+        console.log(response)
+      }
+      catch (err) {
+        console.log(err)
+      }
+    }
   }
 }
 </script>

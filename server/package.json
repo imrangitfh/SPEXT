@@ -11,13 +11,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "@google-cloud/speech": "^4.5.2",
+    "audiobuffer-to-wav": "^1.0.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "eslint": "^7.28.0",
     "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "web-audio-api": "^0.2.2",
+    "xhr": "^2.6.0"
   }
 }

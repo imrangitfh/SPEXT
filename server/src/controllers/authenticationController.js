@@ -1,4 +1,3 @@
-var db = require('../database');
 var mysql = require('mysql');
 var connection = mysql.createConnection({
         host: "localhost",
@@ -12,7 +11,7 @@ connection.connect( (error) => {
         console.log(error);
     }
     else{
-        console.log("MYSQL Connected ....");
+        console.log("MYSQL Connected ...");
     }
 });
 
