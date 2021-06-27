@@ -7,7 +7,7 @@
       <a> Go ahead and sign up for our service and get rid of the </a> <br>
       <a> nerve wrecking process of writing transcripts yourself. </a>
     </div>
-    <div class="right_about"><img src="../css/logo.png" alt="Spext Logo"></div>
+    <div class="right_about"><img src="./logo.png" alt="Spext Logo"></div>
   </div>
 </template>
 

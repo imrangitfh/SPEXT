@@ -7,11 +7,20 @@
 
 <script>
 import navigation from './components/nav'
+import authentication from "./services/authentication";
 
 export default {
   name: 'App',
   components: {
     navigation
+  },
+  async created(){
+    const response = await authentication.getUser({
+      headers:{
+        Authorization: localStorage.getItem('ID')
+      }
+    });
+    await this.$store.dispatch('user', response.data)
   }
 }
 </script>

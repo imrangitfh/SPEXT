@@ -1,17 +1,18 @@
 <template>
   <div class="center">
-    <h1>Audio Transcription</h1>
+    <h1 v-if="user">Audio Transcription / Hello {{user}}</h1>
+    <h1 v-if="!user">Audio Transcription</h1>
     <div class="spoken_text">
       <div id="inner_spoken_text_up">
         <input type="file" accept="audio/*" id="realFile" hidden="hidden"/>
         <button type="button" id="uploadFileBtn" class="button">
-          <img src="upload.png" height="64px" width="64px">
+          <img src="./upload.png" height="64px" width="64px">
         </button>
         <span id="uploadFileSpan">No file chosen!</span>
       </div>
       <div id="inner_spoken_text_down">
         <button id="record" class="button">
-          <img src="mic.png" height="64px" width="64px">
+          <img src="./mic.png" height="64px" width="64px">
         </button>
       </div>
     </div>
@@ -23,12 +24,31 @@
 </template>
 
 <script>
+
+import {mapGetters} from 'vuex'
+import authentication from "../services/authentication";
+
 export default {
-  data () {
+  name: 'Dashboard',
+  data(){
+    return {
+      user: null
+    }
+  },
+  computed: {
+    ...mapGetters(['user'])
+  },
+  async created() {
+    const response = await authentication.getUser({
+      headers: {
+        Authorization: localStorage.getItem('ID')
+      }
+    });
+    this.user = response.data.result[0].username
   }
 }
 </script>
 
 <style scoped>
-  @import "../css/dashboard.css";
+@import "../css/dashboard.css";
 </style>

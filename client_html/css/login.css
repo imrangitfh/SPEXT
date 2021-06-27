@@ -184,3 +184,12 @@ input[type="submit"]:hover{
 .signup_link a:hover{
     text-decoration: underline;
 }
+
+.wrongLogin {
+    text-align: center;
+}
+
+.wrongLogin p {
+    color: red;
+    font-size: small;
+}
