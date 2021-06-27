@@ -5,6 +5,8 @@ import register from '../components/register'
 import dashboard from '../components/dashboard'
 import about from '../components/about'
 import contact from '../components/contact'
+import successful_signup from "../components/successful_signup";
+import forgot from "../components/forgot";
 
 Vue.use(Router)
 
@@ -15,6 +17,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: login
+    },
+    {
+      path: '/success',
+      name: 'success',
+      component: successful_signup
     },
     {
       path: '/register',
@@ -35,6 +42,11 @@ export default new Router({
       path: '/contact-us',
       name: 'contact',
       component: contact
-    }
+    },
+    {
+      path: '/forgot',
+      name: 'forgot',
+      component: forgot
+    },
   ]
 })
