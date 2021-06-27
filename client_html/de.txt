@@ -1,0 +1,241 @@
+"de": {
+    "loginScreen": {
+      "welcome": "Willkommen zurück, schön dich wieder zu sehen",
+      "title": "Login",
+      "forgetPasswordButton": "Passwort vergessen?",
+      "loginButton": "Login",
+      "alternativeSignIn": "Zur Anmeldung",
+      "newAccount": "Habe kein Konto",
+      "signUpButton": "Hier registrieren"
+    },
+    "signUpScreen": {
+      "title": "Registrieren",
+      "welcome": "Hallo, schön, dich an Bord zu haben.",
+      "withWord": "mit",
+      "orWord": "oder",
+      "accept": "Akzeptieren der",
+      "termsAndConditionsLink": "allgemeinen Geschäftsbedingungen",
+      "haveAccount": "Habe kein Konto",
+      "loginLink": "Zur Anmeldung",
+      "registerButton": "nächste"
+    },
+    "completeDataScreen": {
+      "title": "Persönliche Daten vervollständigen",
+      "welcome": "Hallo, schön, dich an Bord zu haben."
+    },
+    "verifyCodeScreen": {
+      "title": "Code eingeben",
+      "enterCodeText": "Bitte den Code eingeben, den wir an dich gesendet haben",
+      "didnotRecieveText": "Keinen Code empfangen?",
+      "attemptsText": "versuche",
+      "resendCodeLink": "Code erneut senden",
+      "nextButton": "nächste"
+    },
+    "forgetPasswordScreen": {
+      "ohNoText": "Oh NEIN!",
+      "title": "Passwort vergessen",
+      "enterEmailText": "E-Mail-Adresse eingeben, um Code zu erhalten",
+      "nextButton": "Passwort zurücksetzen"
+    },
+    "resetPasswordScreen": {
+      "beCarefulText": "Achtung!",
+      "title": "Passwort ändern",
+      "resetPasswordButton": "Passwort zurücksetzen"
+    },
+    "homeScreen": {
+      "WhereTo": "Wohin?",
+      "currentLocation": "Aktueller Standort",
+      "home": "Zuhause",
+      "work": "Arbeit"
+    },
+    "routingScreen": {
+      "pickupPlaceHolder": "Abholort",
+      "stopPlaceHolder": "Stop #",
+      "destinationPlaceHolder": "Ziel",
+      "favouritePlacestitle": "Lieblingsorte",
+      "lastVisitedTitle": "Zuletzt besucht",
+      "nextButton": "nächste"
+    },
+    "searchScreen": {
+      "locationPlaceHolder": "Standort",
+      "currentLocationText": "Aktueller Standort"
+    },
+    "carSelectionScreen": {
+      "title": "Fahrzeugtyp aussuchen",
+      "changePaymentText": "Ändern >",
+      "orderButton": "Bestellen"
+    },
+    "pickUpLocationScreen": {
+      "title": "Abholort bestätigen",
+      "pickUpInText": "Abholung in ",
+      "minuteText": " Minuten",
+      "confirmButton": "Bestätigen"
+    },
+    "loadingScreen": {
+      "title": "Fahrt suchen ...",
+      "cancelLink": "Abbrechen"
+    },
+    "driverInTheWayScreen": {
+      "title": "Dein Fahrer befindet sich am Weg",
+      "carTypeText": "Fahrzeugtyp",
+      "carNumberText": "Fahrzeug No.",
+      "carColorText": "Farbe",
+      "callButton": "Anrufen",
+      "chatButton": "Chat",
+      "cancelRideLink": "Fahrt stornieren"
+    },
+    "tripScreen": {
+      "title": "Am weg zu deinem \Ziel"
+    },
+    "failedScreen": {
+      "onNoText": "Oh NEIN!",
+      "failMessage": "Wir haben kein verfügbares LOBI-Fahrzeug in deiner Nähe gefunden. Versuche es deinen Standort zu ändern",
+      "confirmButton": "Ändern"
+    },
+    "cancelRideScreen": {
+      "title": "Grund für die Stornierung",
+      "doneButton": "Fertig"
+    },
+    "chatScreen": {
+      "title": "Chat",
+      "chatPlaceHolder": "schreibe etwas"
+    },
+    "introSliderScreen": {
+      "skipLink": "Überspringen"
+    },
+    "rateTripScreen": {
+      "title": "Fahrt beendet",
+      "feedback": "Feedback ",
+      "feedbackText": "hilft uns dabei\nunseren Service zu verbessern",
+      "feedbackPlaceHolder": "Wie war die Fahrt?",
+      "submitReviewButton": "Bewertung abschicken"
+    },
+    "menu": {
+      "businessProfile": "Business Profil",
+      "yourTrips": "Deine Fahrten",
+      "referralCode": "Referenzcode",
+      "wallet": "Wallet",
+      "support": "Support",
+      "about": "Über Lobi",
+      "signOutButton": "Ausloggen"
+    },
+    "businessProfile": {
+      "title": "Business Profil",
+      "subTitle": "Unternehmensdaten:",
+      "companyNamePlaceHolder": "Firmenname",
+      "companyAddressPlaceHolder": "Firmenadresse",
+      "uidPlaceHolder": "UID (Optional)",
+      "nextButton": "nächste",
+      "saveChangesButton": "Änderungen speichern"
+    },
+    "wallet": {
+      "title": "Wallet",
+      "paymentMathodTitle": "Zahlungsmethode",
+      "personalTab": "Privat",
+      "companyTab": "Business",
+      "cash": "Cash",
+      "applePay": "Apple Pay",
+      "googlePay": "Google Pay",
+      "addCard": "Zahlungsmethode hinzufügen",
+      "promoCodeTitle": "Promo Code",
+      "promoCodePlaceHolder": "Promo Code eingeben",
+      "addCouponButton": "Hinzufügen"
+    },
+    "personalAddCard": {
+      "title": "Zahlungsmethode hinzufügen",
+      "cardNumberPlaceHolder": "Kartennummer eingeben",
+      "ccvPlaceHolder": "CCV",
+      "saveCardButton": "Karte speichern"
+    },
+    "businessAddCard": {
+      "title": "Business Bezahlungsmethode hinzufügen",
+      "cardNumberPlaceHolder": "Kartennummer eingeben",
+      "ccvPlaceHolder": "CCV",
+      "saveCardButton": "Karte speichern"
+    },
+    "profileEditScreen": {
+      "title": "Profil bearbeiten",
+      "saveEdits": "Speichern",
+      "placesText": "Meine Orte",
+      "emailUsedAlert": "Diese E-Mail ist bereits in Verwendung",
+      "setNewPassword": "Neues Passwort erstellen"
+    },
+    "changeLanguageScreen": {
+      "title": "Sprache ändern",
+      "doneButton": "Fertig",
+      "confirmDialogTitle": "Neue Spracheinstellung speichern",
+      "confirmDialogBody": "Lobi App muss neu gestartet werden.\nWillst du fortfahren?",
+      "confirmDialogButton": "Bestätigen",
+      "cancelDialogButton": "Abbrechen"
+    },
+    "changePasswordScreen": {
+      "title": "Passwort bearbeiten",
+      "oldPasswordPlaceHolder": "Altes Passwort",
+      "newPasswordPlaceHolder": "Neues Passwort",
+      "confirmNewPasswordPlaceHolder": "Passwort bestätigen",
+      "saveButton": "Änderungen speichern",
+      "incorrectOldPassword": "Ungültiges altes Passwort"
+    },
+    "placesEditScreen": {
+      "title": "Ortsdetails",
+      "addressPlaceHolder": "Ortsadresse",
+      "saveButton": "Änderungen speichern",
+      "failedUpdate": "Fehler beim Aktualisieren des Ortese"
+    },
+    "referralCodeScreen": {
+      "title": "Referral Code",
+      "referralString": "Du weißt was man so sagt,",
+      "referralString2": "\"sharing is caring\"",
+      "shareCodeLink": "Code teilen"
+    },
+    "tripDetailsScreen": {
+      "tite": "Details zur Fahrt",
+      "contactDriverButton": "Fahrer Kontaktieren",
+      "driverUnavailableButton": "Fahrer konnte nicht erreicht werden"
+    },
+    "tripsScreen": {
+      "title": "Deine Fahrten",
+      "HistoryTab": "History",
+      "upComingTab": "Geplant"
+    },
+    "forms": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "user@email.com",
+      "password": "Passwort eingeben",
+      "phone": "Mobilnummer"
+    },
+    "errors": {
+      "emptyField": "Pflichtfeld",
+      "invalidNameCharacters": "Bitte nur Buchstaben für den Namen verwenden",
+      "invalidEmail": "Ungültiges E-Mail Format",
+      "invalidPhone": "Ungültige Mobilnummer",
+      "passwordMismatch": "Passwörter stimmen nicht überein",
+      "passwordLess6": "Die Passwortlänge muss zwischen 6-16 Zeichen betragen",
+      "passwordMore16": "Die Passwortlänge muss zwischen 6-16 Zeichen betragen",
+      "passwordLowerCase": "Das Passwort muss mindestens einen Kleinbuchstaben enthalten",
+      "passwordUpperCase": "Das Passwort muss mindestens einen Großbuchstaben enthalten",
+      "passwordSymbol": "Das Passwort muss mindestens ein Sonderzeichen enthalten",
+      "creditcardNumberNonDigit": "Kartennummer darf nur aus Zahlen bestehen",
+      "creditCardNOT14": "Kartennummer muss aus 14 Zahlen bestehen",
+      "invalidCCV": "Ungültiger CCV",
+      "ccvNonDigit": "CCV darf nur aus Zahlen bestehen",
+      "incorrectDateFormat": "Falsches Datumsformat MM / JJ",
+
+      "invalidServerResponse": "Ungültige Serverantwort",
+      "cardAlreadyUsed": "Kreditkarte wird bereits für ein anderes Konto verwendet",
+      "cardFailVerification": "Kreditkarte konnte nicht verifiziert werden",
+      "removeCardFailed": "Karte kann nicht gelöscht werden",
+      "couponAlreadyUsed": "Gutschein bereits verwendet",
+      "invalidCoupon": "Ungültiger Gutschein",
+      "invalidCredentials": "Ungültige Anmeldeinformationen",
+      "loginFailed": "Login fehlgeschlagen",
+      "codeAlreadyVerified": "Code bereits verifiziert",
+      "accountSuspended": "Konto gesperrt\nkontaktiere den Kundensupport",
+      "maxAttempts": "Höchstgrenze der Versuche erreicht\nBitte kontaktieren Sie den Support",
+      "invalidCode": "Ungültiger Code",
+      "usedEmailPhone": "E-Mail oder Telefonnummer bereits verwendet",
+      "smsUnavailable": "SMS-Bestätigung nicht verfügbar\nBitte wenden Sie sich an den Support",
+      "failedImageUpdate": "Profilbild konnte nicht aktualisiert werden."
+    }
+  }
