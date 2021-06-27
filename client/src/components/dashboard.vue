@@ -17,7 +17,7 @@
     </div>
 
     <div class="translated_text">
-      <input type="text" value="Your transcripted text will be displayed here!" id="transcript_output"/>
+      <input name="message" v-model="message" placeholder="Your transcripted text will be displayed here!" id="transcript_output"/>
     </div>
   </div>
 </template>
@@ -29,7 +29,8 @@ export default {
   name: 'dashboard',
   data () {
     return {
-      file: ''
+      file: '',
+      message: ''
     }
   },
   methods: {
@@ -44,6 +45,7 @@ export default {
       try {
         const response = await dashboardUpload.fileUpload(formData)
         console.log(response)
+        this.message = response.data.transcriptedText
       }
       catch (err) {
         console.log(err)
