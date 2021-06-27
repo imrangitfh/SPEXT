@@ -33,7 +33,7 @@ module.exports = {
                 //if(err) throw err;
                 //console.log(err);
                 if (!err){
-                    res.send({statusCode:200, msg:'register successful', spext_user})
+                    res.send({statusCode:200, msg:'register was successful', spext_user})
                 }
                 if(err){
                     if(err.errno === 1062){

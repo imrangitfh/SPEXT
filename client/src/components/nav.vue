@@ -10,10 +10,14 @@
             <a @click="$router.push('/about-us'); location.reload()"><li>About</li></a>
             <a @click="$router.push('/contact-us'); location.reload()"><li>Contact</li></a>
             <div class="dropdown" v-if="!user">
-              <button class = "dropbtn">My Profile</button>
+              <button class ="dropbtn">My Profile</button>
               <div class="dropdown-content">
-                <a href="javascript:void(0)" @click="handleDelete">Delete my User</a>
-                <a href="javascript:void(0)" @click="handleClick">Logout</a>
+                <div id="deleteUserButton">
+                  <a href="javascript:void(0)" @click="handleDelete">Delete my User</a>
+                </div>
+                <div id="logoutButton">
+                  <a href="javascript:void(0)" @click="handleClick">Logout</a>
+                </div>
               </div>
             </div>
             <a v-if="user" @click="$router.push('/')"><li>Login</li></a>
