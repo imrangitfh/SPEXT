@@ -5,8 +5,8 @@ import register from '../components/register'
 import dashboard from '../components/dashboard'
 import about from '../components/about'
 import contact from '../components/contact'
-import successful_signup from "../components/successful_signup";
-import forgot from "../components/forgot";
+import successful_signup from "../components/successful_signup"
+import forgot from "../components/forgot"
 
 Vue.use(Router)
 

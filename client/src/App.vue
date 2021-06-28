@@ -1,8 +1,8 @@
 <template>
   <div id="container">
     <div id="app">
-      <navigation :key="$route.fullPath"/>
-      <router-view/>
+      <navigation/>
+      <router-view :key="$route.fullPath"/>
     </div>
   </div>
 </template>
@@ -28,8 +28,14 @@ export default {
 </script>
 
 <style>
-  @import "./css/login.css";
-  @import "./css/about.css";
-  @import "./css/dashboard.css";
-  @import "./css/contactus.css";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  background: #34958A;
+}
+#container{
+  position: relative;
+}
 </style>
