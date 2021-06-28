@@ -49,22 +49,20 @@ export default {
 
 <style>
 .center{
-  position: relative;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  left: 25%;
-  top: 30%;
+  position: absolute;
+  top: 550%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 50%;
-  height: 50%;
+  height: auto;
   background: whitesmoke;
   border-radius: 10px;
   text-align: center;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out;
 }
 .center h1{
   text-align: center;
-  padding: 10px 0 30px 0;
+  padding: 10px 1% 30px 0;
   border-bottom: 1px solid #ADADADAD;
 }
 .center form{
@@ -131,5 +129,14 @@ input[type="submit"]{
 input[type="submit"]:hover{
   border-color: #101010;
   transition: .5s;
+}
+
+@media (max-width: 600px) {
+  .center{
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    width: 70%;
+  }
 }
 </style>

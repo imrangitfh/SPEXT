@@ -4,7 +4,7 @@
     <div class="left_about">
       <a> Thank you for signing up for our service! </a> <br>
       <a> You can proceed now to the login page </a><br><br>
-      <button class="proceed_login" @click="$router.push('/')">Proceed to Login</button>
+      <button type="submit" class="proceed_login" @click="$router.push('/')">Proceed to Login</button>
     </div>
     <div class="right_about"><img src="./logo.png" alt="Spext Logo"></div>
   </div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-name: "successful_signup"
+  name: "successful_signup"
 }
 </script>
 
@@ -29,7 +29,7 @@ name: "successful_signup"
 }
 .center h1{
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 1% 0 30px 0;
   border-bottom: 1px solid #ADADADAD;
 }
 .center form{
@@ -66,5 +66,22 @@ name: "successful_signup"
   float: left;
   position: center;
   width: 50%;
+}
+button[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #101010;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 15px;
+}
+button[type="submit"]:hover{
+  border-color: #101010;
+  transition: .5s;
 }
 </style>

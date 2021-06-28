@@ -85,7 +85,7 @@ export default {
 }
 .center h1{
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 1% 0 30px 0;
   border-bottom: 1px solid #ADADADAD;
 }
 .center form{

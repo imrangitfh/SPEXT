@@ -7,9 +7,9 @@
             <a @click="$router.push('/')"><h1>SP<span>EXT</span></h1></a>
           </div>
           <ul class="navigation">
-            <a v-if="currentUser" @click="$router.push('/dashboard'); location.reload()"><li>Home</li></a>
-            <a @click="$router.push('/about-us'); location.reload()"><li>About</li></a>
-            <a @click="$router.push('/contact-us'); location.reload()"><li>Contact</li></a>
+            <a class="navA" v-if="currentUser" @click="$router.push('/dashboard'); location.reload()"><li>Home</li></a>
+            <a class="navA" @click="$router.push('/about-us'); location.reload()"><li>About</li></a>
+            <a class="navA" @click="$router.push('/contact-us'); location.reload()"><li>Contact</li></a>
             <div class="dropdown" v-if="currentUser">
               <button class = "dropbtn">My Profile</button>
               <div class="dropdown-content">
@@ -115,16 +115,17 @@ export default {
 }
 .navigation{
   float: right;
-  height: 100%;
-  padding-right: 10%;
+  height: 50%;
+  padding-right: 5%;
 }
-.navigation a{
+.navA{
   height: 100%;
   display: table;
   float: left;
   padding: 0 20px;
   cursor: pointer;
   text-decoration: none;
+  background-color: #101010;
 }
 .navigation a:last-child{
   padding-right: 0;
@@ -142,13 +143,25 @@ export default {
   color: #54B5AA;
   text-decoration: none;
 }
+.dropbtn {
+  background-color: #101010;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: white;
+  padding: 20px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
 @media (max-width: 600px) {
   .header{
     width: 100%;
-    height: 60px;
     display: block;
     background-color: #101010;
+
+    height: 160px;
   }
+
   .navigation a li{
     display: table-cell;
     padding-bottom: 10px;
@@ -158,19 +171,51 @@ export default {
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
   }
+  .spext_header{
+    height: 50%;
+    width: 100%;
+  }
+
+  .dropdown{
+
+  }
+
 }
+@media (max-width: 800px) {
+  .header{
+    width: 100%;
+    display: block;
+    background-color: #101010;
+  }
+  .navigation a{
+    padding: 0 5px;
+  }
+  .navigation a li{
+    width: 60px;
+    font-size: 13px;
+  }
+  .dropdown{
+    width: 115px;
+  }
+  .dropbtn {
+    font-size: 13px;
+  }
+
+
+}
+
 @media (max-width: 420px) {
   .header{
     width: 100%;
-    height: 60px;
     display: block;
     background-color: #101010;
+    height: 120px;
   }
   .navigation a li{
     display: table-cell;
     padding-bottom: 10px;
     height: 100%;
-    width: 80px;
+    width: 50px;
     color: white;
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -179,21 +224,18 @@ export default {
     height: 100%;
     display: table;
     float: left;
-    padding: 0 10px;
+    padding: 0 2px;
     cursor: pointer;
     text-decoration: none;
   }
+  .dropdown{
+    width: 100px;
+  }
+  .dropbtn {
+    font-size: 10px;
+  }
 }
-.dropbtn {
-  background-color: #101010;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+
 .dropbtn :hover {
   color: #54B5AA;
 }
@@ -208,7 +250,6 @@ export default {
   position: absolute;
   background-color: #f9f9f9;
   width: 20vh;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 

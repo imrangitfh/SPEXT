@@ -31,7 +31,7 @@
 import authentication from "../services/authentication";
 
 export default {
-name: "forgot",
+  name: "forgot",
   data(){
     return {
       username: '',
@@ -41,11 +41,11 @@ name: "forgot",
   },
   methods: {
     async click() {
-        const response = authentication.changeUser({
-          username: this.username,
-          question_answer: this.question_answer,
-          password: this.password
-        })
+      const response = authentication.changeUser({
+        username: this.username,
+        question_answer: this.question_answer,
+        password: this.password
+      })
       if(!(await response).data.changed){
         await this.showErrorMessageForgot("User was not found or credentials are wrong, please try again!")
       } else {
@@ -84,7 +84,7 @@ name: "forgot",
 }
 .center h1{
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 1% 0 30px 0;
   border-bottom: 1px solid #ADADADAD;
 }
 .center form{

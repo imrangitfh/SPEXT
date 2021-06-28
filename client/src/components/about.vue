@@ -1,11 +1,10 @@
 <template>
-  <div class="center">
+  <div class="center_about">
     <h1>About us</h1>
     <div class="left_about">
-      <a> We are a team of motivated students at the FH Campus in vienna </a> <br>
-      <a> and have developed a speech to text software. </a><br><br>
-      <a> Go ahead and sign up for our service and get rid of the </a> <br>
-      <a> nerve wrecking process of writing transcripts yourself. </a>
+      <p> We are a team of motivated students at the FH Campus in vienna </p>
+      <p> and have developed a speech to text software.</p>
+      <p> Go ahead and sign up for our service and get rid of the<br>nerve wrecking process of writing transcripts yourself. </p>
     </div>
     <div class="right_about"><img src="../css/logo.png" alt="Spext Logo"></div>
   </div>
@@ -14,12 +13,15 @@
 <script>
 export default {
   data () {
+    return {
+
+    }
   }
 }
 </script>
 
 <style>
-.center{
+.center_about{
   position: absolute;
   top: 180%;
   left: 25%;
@@ -29,20 +31,21 @@ export default {
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .30);
 }
-.center h1{
+.center_about h1{
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 1% 0 30px ;
   border-bottom: 1px solid #ADADADAD;
 }
-.center form{
+.center_about form{
   padding: 0 40px;
   box-sizing: border-box;
 }
+
 @media (max-width: 600px) {
   .left_about{
     font-size: 10px;
   }
-  .center{
+  .center_about{
     position: absolute;
     top: 180%;
     left: 15%;
@@ -68,5 +71,6 @@ export default {
   float: left;
   position: center;
   width: 50%;
+  text-align: center;
 }
 </style>

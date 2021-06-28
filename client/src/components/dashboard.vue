@@ -1,5 +1,5 @@
 <template>
-  <div class="center">
+  <div class="center_dash">
     <h1 v-if="user">Audio Transcription / Hello {{user}}</h1>
     <h1 v-if="!user">Audio Transcription</h1>
     <div class="spoken_text">
@@ -73,14 +73,15 @@ export default {
 </script>
 
 <style>
-.center{
+.center_dash{
   position: absolute;
-  top: 400%;
+  top: 550%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   background: whitesmoke;
-  height: 600%;
+  height: 900%;
   border-radius: 10px;
   margin-top: 3%;
   overflow: hidden;
@@ -94,9 +95,9 @@ export default {
   background: lightgrey;
   border-radius: 5px;
 }
-.center h1{
+.center_dash h1{
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 1% 0 30px 0;
   border-bottom: 1px solid #ADADADAD;
 }
 .translated_text{
@@ -127,7 +128,8 @@ export default {
 #transcript_output{
   height: 100%;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  padding: 5% 5% 5% 5%;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   background-color: lightgrey;
@@ -163,72 +165,29 @@ export default {
   position: relative;
   top: 70px;
 }
-.dropbtn {
-  background-color: #101010;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
 #realFile {
   position: absolute;
   float: top;
   display: none;
 }
 
-.dropbtn :hover {
-  color: #54B5AA;
-}
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 20vh;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #54B5AA;
-  width: 100%;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropdown-content #deleteUserButton {
-  width: 100%;
-  float: left;
-}
-
-.dropdown:hover .dropdown-content #logoutButton {
-  width: 100%;
-  float: left;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  border-color: #101010;
-  transition: .5s;
+@media (max-width: 900px) {
+  .translated_text{
+    position: relative;
+    float: top;
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    height: 50%;
+    background: lightgrey;
+    border-radius: 5px;
+  }
+  .spoken_text{
+    position: relative;
+    width: 100%;
+    margin: 5px 0 5px 5px;
+    height: 50%;
+    background: lightgrey;
+    border-radius: 5px;
+  }
 }
 </style>

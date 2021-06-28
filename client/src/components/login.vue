@@ -74,8 +74,10 @@ export default {
 <style>
 .center{
   position: absolute;
-  top: 180%;
-  left: 25%;
+  top: 550%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 50%;
   height: auto;
   background: whitesmoke;
@@ -84,7 +86,7 @@ export default {
 }
 .center h1{
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 1% 0 30px 0;
   border-bottom: 1px solid #ADADADAD;
 }
 .center form{
@@ -173,5 +175,13 @@ input[type="submit"]:hover{
 .signup_link a:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .center{
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    width: 70%;
+  }
 }
 </style>
