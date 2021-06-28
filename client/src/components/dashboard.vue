@@ -4,11 +4,15 @@
     <h1 v-if="!user">Audio Transcription</h1>
     <div class="spoken_text">
       <div id="inner_spoken_text_up">
-        <input type="file" @change="onFileChange" id="realFile" ref="file"/>
+        <button class="button" id="fileUpload" onclick="document.getElementById('realFile').click()">
+          <img src="../assets/file.png" height="64px" width="64px" alt="Upload your File here!">
+        </button>
+        <span id="filePath">No file chosen!</span>
+        <input type="file" @change="onFileChange" id="realFile" ref="file">
       </div>
       <div id="inner_spoken_text_down">
         <button @click.prevent="onUploadFile" enctype="multipart/form-data" id="uploadFileBtn" class="button">
-          <img src="./upload.png" height="64px" width="64px">
+          <img src="./upload.png" height="64px" width="64px" alt="Transcript">
         </button>
       </div>
     </div>
@@ -46,8 +50,9 @@ export default {
   },
   methods: {
     onFileChange () {
-      const file = this.$refs.file.files[0]
-      this.file = file
+      let spanFile = document.getElementById('filePath')
+      this.file = this.$refs.file.files[0]
+      spanFile.innerHTML = "Selected File: " + this.file.name
     },
     async onUploadFile () {
       const formData = new FormData()

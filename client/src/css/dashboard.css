@@ -15,7 +15,7 @@ body{
 }
 .inner_header{
   width: 1000px;
-  heigh: 100%;
+  height: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -160,7 +160,10 @@ body{
 #uploadFileBtn {
   position: absolute;
 }
-#uploadFileSpan {
+#fileUpload {
+  position: absolute;
+}
+#filePath {
   position: relative;
   top: 70px;
 }
@@ -173,6 +176,12 @@ body{
   font-size: 16px;
   border: none;
   cursor: pointer;
+}
+
+#realFile {
+  position: absolute;
+  float: top;
+  display: none;
 }
 
 .dropbtn :hover {
