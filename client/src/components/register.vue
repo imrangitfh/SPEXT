@@ -77,6 +77,7 @@ export default {
   position: absolute;
   top: 180%;
   left: 25%;
+  transform: translate(0%, 0%);
   width: 50%;
   height: auto;
   background: whitesmoke;

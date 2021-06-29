@@ -46,7 +46,7 @@ module.exports = {
             });
         } catch (err) {
             res.status(400).send({
-                error: 'this email is already in use.'
+                error: 'failed to execute task'
             })
         }
     },

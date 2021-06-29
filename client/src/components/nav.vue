@@ -17,7 +17,7 @@
                 <a href="javascript:void(0)" @click="handleClick">Logout</a>
               </div>
             </div>
-            <a v-if="!currentUser" @click="$router.push('/')"><li>Login</li></a>
+            <a class="navA" v-if="!currentUser" @click="$router.push('/')"><li>Login</li></a>
           </ul>
         </div>
       </div>
